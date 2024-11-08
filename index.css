@@ -1,0 +1,509 @@
+/* src/components/Dashboard.css */
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #05361b; /* Light grayish-blue background for the dashboard */
+    border-radius: 8px; /* Rounded corners for a softer, modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+  }
+  
+  header {
+    background-color: #00796b; /* Dark teal header for a strong contrast */
+    color: rgb(234, 233, 233);
+    padding: 1rem;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #00796b; /* Teal color for links */
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #00796b; /* Darken the link background on hover */
+    border-color: #004d40; /* Slightly darker border on hover */
+  }
+  
+  section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  p {
+    color: #555; /* Slightly lighter text color */
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #0a4a36; /* White background for the table */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for table */
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border between rows */
+  }
+  
+  th {
+    background-color: #004d40; /* Dark teal for table headers */
+    color: rgb(217, 16, 16); /* White text for contrast */
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #f9f9f9; /* Light background for table rows */
+  }
+  
+  td:hover {
+    background-color: #2aa59f; /* Light teal highlight on hover */
+  }
+  
+  button {
+    background-color: #00796b; /* Teal button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.5); /* Focus ring with teal color */
+  }
+  /* src/styles/Dashboard.css */
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    background-color: #2d3d44;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d3d44;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e1e8ee;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #b3c4d4;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4c8b75;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2d3d44;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+/* ProductForm.css */
+
+/* Wrapper style */
+.product-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Price and Quantity input styles */
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    max-width: 200px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Alert message styles */
+.alert {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Link back to dashboard */
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Input group container style */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* global.css */
+
+/* Set up global styles for the body */
+body {
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa; /* Light background color */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Create a container for centering the content */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Max width for large screens */
+  padding: 20px;
+}
+
+/* Set up a simple and clean header style */
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* For error message styling */
+.alert {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style links globally */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for forms and inputs */
+input,
+button {
+  font-size: 16px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for the input elements */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for form container */
+.product-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Add some space for elements */
+.product-form-container h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Add margin for buttons and form inputs */
+input, button {
+  width: 100%;
+}
+
+input[type="number"] {
+  max-width: 200px;
+}
+/* global.css */
+
+/* Set up global styles for the body */
+body {
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa; /* Light background color */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Create a container for centering the content */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Max width for large screens */
+  padding: 20px;
+}
+
+/* Set up a simple and clean header style */
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* For error message styling */
+.alert {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style links globally */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for forms and inputs */
+input,
+button {
+  font-size: 16px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for the input elements */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for form container */
+.product-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Add some space for elements */
+.product-form-container h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Add margin for buttons and form inputs */
+input, button {
+  width: 100%;
+}
+
+input[type="number"] {
+  max-width: 200px;
+}
+
